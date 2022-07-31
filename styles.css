@@ -1,0 +1,30 @@
+@font-face { font-family: Moonstar; src: url('assets/Moonstar.ttf'); }
+@font-face { font-family: Starlight; src: url('assets/Starlight.ttf'); } 
+@font-face { font-family: Diabolica; src: url('assets/Diabolica-VRBB.ttf'); } 
+@font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); } 
+html, body {
+  background-image: url('assets/bgstar.gif');
+  cursor: url('assets/cursor-magic.png'), default;
+  font-family: CyberCaligraphic;
+  color: rgb(204, 193, 36);
+}
+h1 {
+  font-family: Moonstar;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
