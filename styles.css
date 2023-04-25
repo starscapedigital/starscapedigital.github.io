@@ -13,8 +13,10 @@ html, body {
   font-family: CyberCaligraphic;
   color: rgb(204, 193, 36);
   margin: 0;
-  overflow: hidden;
 }
 h1 {
   font-family: Moonstar;
+}
+.hide-overflow {
+  overflow: hidden;
 }
