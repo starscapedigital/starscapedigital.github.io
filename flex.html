@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/cursor-magic.png" />
+    <meta name="author" content="Starscape">
+    <meta name="description" content="Starscape Digital Website">
+    <meta name="keywords" content="starscape">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>flexbox</title>
+  </head>
+  <body class="center">
+
+    <div class="container">
+      <p>flexRow</p>
+      <div class="flexRow">
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+      </div>
+      <p>flexRowBetween align-items:center height:300px</p>
+      <div class="flexRowBetween">
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+      </div>
+      <p>flexRowAround</p>
+      <div class="flexRowAround">
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+      </div>
+      <p>flexRowEvenly</p>
+      <div class="flexRowEvenly">
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItem">
+          <h1>Starscape Digital</h1>
+        </div>
+      </div>
+      <p>flexItemFlex</p>
+      <div class="flexRowEvenly">
+        <div class="flexItemFlex">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItemFlex">
+          <h1>Starscape Digital</h1>
+        </div>
+        <div class="flexItemFlex">
+          <h1>Starscape Digital</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    .container {
+      display: block;
+    }
+    .flexRow {
+      display: flex;
+      flex-direction: row;
+    }
+    .flexRowBetween {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 300px;
+    }
+    .flexRowAround {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .flexRowEvenly {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .flexCol {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flexItem {
+      background-color: green;
+    }
+    .flexItem:nth-child(even) {
+      background-color: red;
+    }
+
+    .flexItemFlex {
+      background-color: green;
+      flex: 1;
+    }
+    .flexItemFlex:nth-child(even) {
+      background-color: red;
+      flex: 2;
+    }
+  </style>
+</html>

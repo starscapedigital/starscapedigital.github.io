@@ -3,10 +3,13 @@
 @font-face { font-family: Diabolica; src: url('assets/Diabolica-VRBB.ttf'); } 
 @font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); } 
 html, body {
+  background-color: black;;
   background-image: url('assets/bgstar.gif');
   cursor: url('assets/cursor-magic.png'), default;
   font-family: CyberCaligraphic;
   color: rgb(204, 193, 36);
+  margin: 0;
+  overflow: hidden;
 }
 h1 {
   font-family: Moonstar;
