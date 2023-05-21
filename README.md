@@ -1,3 +1,3 @@
-npx tailwindcss -i styles.css -o main.css --watch
+npx tailwindcss -i input.css -o output.css --watch
 
 todo: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
