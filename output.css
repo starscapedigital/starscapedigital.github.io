@@ -904,6 +904,10 @@ html, body {
   margin: 0;
 }
 
+a {
+  cursor: url('assets/cursor-magic2.png'), pointer;
+}
+
 h1 {
   font-family: Moonstar;
 }
