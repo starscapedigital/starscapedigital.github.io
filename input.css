@@ -8,11 +8,13 @@
 @font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); } 
 html, body {
   background-color: black;
-  background-image: url('assets/bgstar.gif');
+  /* background-image: url('assets/bgstar.gif'); */
   cursor: url('assets/cursor-magic.png'), default;
   font-family: CyberCaligraphic;
   color: rgb(204, 193, 36);
   margin: 0;
+
+  background-position: 50% 15%; background-repeat: no-repeat; background-size: cover; background-attachment: scroll; overflow: hidden auto; max-height: 100%; background-image: url("https://cdn.beacons.ai/user_content/8eOGw07iMvbP8AwATUDkHi1yDhX2/backgrounds/home/background_lavitz.png?t=1670424670754");
 }
 h1 {
   font-family: Moonstar;
