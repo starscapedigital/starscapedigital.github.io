@@ -30,7 +30,7 @@
 </head>
 
 <body class="h-screen">
-  <div class="max-w-full mx-4 md:max-w-3xl md:mx-auto text-center mb-16">
+  <div class="max-w-full mx-4 md:max-w-3xl md:mx-auto text-center">
 
     <div class="flex justify-center items-center pt-[37px] px-[10%]">
       <img class="w-[15%] motion-reduce:hidden" src="assets/18.gif" />
@@ -53,9 +53,9 @@
     <div id="about" class="text-left max-w-lg md:max-w-2xl mx-auto my-auto mt-12 p-8 bg-opacity-70 bg-slate-700 rounded-xl shadow-md shadow-teal-400 overflow-hidden duration-200 sm:hover:scale-105">
       <p class="mt-2"><span class="text-xl text-yellow-400">Starscape</span> is part digital development studio and part guild of free/love-thinking creators collected under a banner to better
         the galaxy through cosmic conscious creation and collaboration.</p>
-      <p class="mt-2"><a href="./studio.html" class="text-xl  text-cyan-400 hover:text-yellow-400 hover:underline">Digital</a> is developing software for, and supporting
+      <p class="mt-2"><a href="./studio.html" class="text-xl text-cyan-400 hover:text-yellow-400 hover:underline">Digital</a> is developing software for, and supporting
         technologically, the empowerment and expansion of humanity.</p>
-      <p class="mt-2"><a href="./guild.html" class="text-xl  text-cyan-400 hover:text-yellow-400 hover:underline">Guild</a> is collectively supporting each member's quests
+      <p class="mt-2"><a href="./guild.html" class="text-xl text-cyan-400 hover:text-yellow-400 hover:underline">Guild</a> is collectively supporting each member's quests
         via a collaborative in-network and connective out-network, providing space for expressive exposition and
         championing network spirituality.</p>
       <p class="mt-4 text-xl text-violet-400">Starscape's north stars</p>
@@ -65,12 +65,23 @@
     </div>
 
     <div class="credits">
-      <p class="credits-pretext">Made by</p>
+      <p class="credits-pretext">birthed by</p>
       <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
         <rect class="credits-shape" height="60" width="320" />
-        <div class="credits-text">LAVITZ STARLOVE</div>
+        <div class="credits-text">Lavitz Starlove</div>
       </svg>
     </div>
+
+    <!-- Define our SVG clip path (credit ZachSaucier) -->
+    <svg width='0' height='0'>
+      <defs>
+        <clipPath id="star-cp" clipPathUnits="objectBoundingBox">
+          <path d="M0.5, 0 L0.629, 0.345 L0.982, 0.345 L0.682, 0.557 L0.809, 0.891 L0.5, 0.727 L0.191, 0.891 L0.318, 0.557 L0.018, 0.345 L0.371, 0.345z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+    <!-- The actual elements we're using -->
+    <div class="star-clip clip-second"></div>
 
     <!-- <div class="max-w-md mx-auto mt-16 bg-opacity-30 bg-slate-700 rounded-xl shadow-md shadow-purple-700 overflow-hidden md:max-w-2xl">
       <div class="md:flex">
@@ -100,8 +111,9 @@
     </div>
     <div class="h-taskbar h-[3.75rem] justify-center flex absolute top-auto bottom-0 left-0 right-0">
       <div class="h-taskbar h-[3.75rem] justify-between flex absolute top-auto bottom-0 left-0 right-0">
-        <div class="h-taskbarcontents l gap-4 items-center py-2 px-4 flex justify-start">
-          <img class="h-[3rem]" src="assets/starscapedigitallogoleft.png" alt="Starscape Digital logo">
+        <div class="h-taskbarcontents l items-start py-2 px-4 flex flex-col">
+          <img class="h-[1.5rem]" src="assets/starscapelogosolo.png" alt="Starscape Digital logo">
+          <img class="h-[1.5rem] logo-shift" src="assets/starscapedigitalsolo.png" alt="Starscape Digital logo">
         </div>
         <div class="h-taskbarcontents r gap-4 items-center py-2 px-4 flex justify-end">
 
