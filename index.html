@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,47 +28,75 @@
   <link rel="stylesheet" href="output.css">
   <!-- <script type="text/javascript" src="cursortrail.js"></script> -->
 </head>
-<body class="max-w-3xl h-screen mx-auto text-center my-auto">
-  <div class="flex justify-center items-center pt-[37px] px-[10%]">
-    <img class="w-[15%]" src="assets/18.gif" />
-    <h1 class="text-4xl sm:text-4xl text-center"><a href="#"><img src="assets/starscapelogosolo.png" alt="Starscape"></a></h1>
-    <img class="w-[15%]" src="assets/18.gif" />
-  </div>
-  <div class="flex flex-row justify-center items-center px-[20%]">
-    <a href="#"><img class="grayscale hover:grayscale-0 hover:border-double hover:border-blue-400 hover:border-b-2 hover:border-l-2" src="assets/starscapeguildsolo.png" alt="Guild"></a>
-    <img class="w-[10%]" src="assets/starscapestardivider.png" alt="">
-    <a href="#"><img class="border-double border-blue-400 hover:border-b-2 hover:border-r-2" src="assets/starscapedigitalsolo.png" alt="Digital"></a>
-  </div>
 
-  <!-- <img src="assets/starl.gif" class="mx-auto mt-2" /> -->
+<body class="h-screen">
+  <div class="max-w-full mx-4 md:max-w-3xl md:mx-auto text-center mb-16">
 
-  <!-- <p class="py-2">You are more powerful than you realize</p>
-  <p class="py-2">This reality is more magical than you can imagine</p> -->
-
-  <!-- <div class="max-w-md mx-auto mt-16 bg-opacity-30 bg-slate-700 rounded-xl shadow-md shadow-purple-700 overflow-hidden md:max-w-2xl">
-    <div class="md:flex">
-      <div class="md:shrink-0">
-        <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/castle.gif" alt="Castle">
-      </div>
-      <div class="p-8 mx-auto">
-        <div class="uppercase tracking-wide text-sm text-purple-400 font-semibold">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-flex">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-          </svg>          
-          <h2 class="inline-flex">Contact</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-flex">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-          </svg>    
-        </div>    
-        <p class="mt-2 text-slate-200">Updating this section in time with service offerings and portfolio</p>
-        <a href="mailto:team@starscape.digital" class="block mt-1 text-lg leading-tight font-medium text-yellow-400 hover:text-blue-300 hover:underline">Inquire via email</a>
-      </div>
+    <div class="flex justify-center items-center pt-[37px] px-[10%]">
+      <img class="w-[15%]" src="assets/18.gif" />
+      <h1 class="text-4xl sm:text-4xl text-center duration-100 hover:scale-105"><a href="#"><img src="assets/starscapelogosolo.png"
+            alt="Starscape"></a></h1>
+      <img class="w-[15%]" src="assets/18.gif" />
     </div>
-  </div> -->
+    <div class="flex flex-row justify-center items-center px-[20%]">
+      <!--  hover:border-double hover:border-blue-400 hover:border-b-2 hover:border-l-2 -->
+      <a href="./guild.html"><img
+          class="grayscale hover:grayscale-0 duration-100 hover:scale-105"
+          src="assets/starscapeguildsolo.png" alt="Guild"></a>
+      <img class="w-[10%] img-rotate" src="assets/starscapestardivider.png" alt="">
+      <a href="./agency.html"><img
+          class="grayscale hover:grayscale-0 duration-100 hover:scale-105"
+          src="assets/starscapedigitalsolo.png" alt="Digital"></a>
+      <!-- todo add shop link underneath -->
+    </div>
 
-  <footer class="h-taskbar-wrapper object-contain absolute top-auto bottom-0 left-0 right-0 overflow-visible">
-    <div class="h-taskbarcontents c gap-4 items-center py-2 px-4 flex justify-center mb-[3.75rem]">
-      <img src="assets/undmysticconstr.gif" alt="Website is under mystic construction" />
+    <div id="about" class="text-left max-w-lg md:max-w-2xl mx-auto my-auto mt-12 p-8 bg-opacity-70 bg-slate-700 rounded-xl shadow-md shadow-teal-400 overflow-hidden duration-200 sm:hover:scale-105">
+      <p class="mt-2"><span class="text-xl text-yellow-400">Starscape</span> is part digital agency and part guild of free/love-thinking creators collected under a banner to better
+        the galaxy through cosmic conscious creation and collaboration.</p>
+      <p class="mt-2"><a href="./agency.html" class="text-xl  text-cyan-400 hover:text-yellow-400 hover:underline">Digital</a> is developing software for, and supporting
+        technologically, the empowerment and expansion of humanity.</p>
+      <p class="mt-2"><a href="./guild.html" class="text-xl  text-cyan-400 hover:text-yellow-400 hover:underline">Guild</a> is collectively supporting each member's quests
+        via a collaborative in-network and connective out-network, providing space for expressive exposition and
+        championing network spirituality.</p>
+      <p class="mt-4 text-xl text-violet-400">Starscape's north stars</p>
+      <p class="mt-2"> ☆ <span class=" text-xl text-violet-400">Open-inquiry</span> - Investigating the richly infinite fields of reality, exploring all perspectives, attaching not to any single symbol, archetype, belief, perception.</p>
+      <p class="mt-2">☆ <span class=" text-xl text-violet-400">Co-creation</span> - Navigating the nebulous fog of creative inspiration, collaboratively expressing our souls, constructing and iterating systems for harmonious cooperation.</p>
+      <p class="mt-2">☆ <span class=" text-xl text-violet-400">Love</span> - The highest vibration, the most powerful force, the most potent medicine. Love is the answer to all questions, the solution to all problems, the key to all locks, the path to all destinations.</p>
+    </div>
+
+    <div class="credits">
+      <p class="credits-pretext">Made by</p>
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+        <rect class="credits-shape" height="60" width="320" />
+        <div class="credits-text">LAVITZ STARLOVE</div>
+      </svg>
+    </div>
+
+    <!-- <div class="max-w-md mx-auto mt-16 bg-opacity-30 bg-slate-700 rounded-xl shadow-md shadow-purple-700 overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/castle.gif" alt="Castle">
+        </div>
+        <div class="p-8 mx-auto">
+          <div class="uppercase tracking-wide text-sm text-purple-400 font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-flex">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+            </svg>          
+            <h2 class="inline-flex">Contact</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-flex">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>    
+          </div>    
+          <p class="mt-2">Updating this section in time with service offerings and portfolio</p>
+          <a href="mailto:team@starscape.digital" class="block mt-1 text-lg leading-tight font-medium text-yellow-400 hover:text-blue-300 hover:underline">Inquire via email</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <!--  bg-cyan-400 bg-opacity-60 -->
+  <footer class="h-taskbar-wrapper w-full object-contain bottom-0 left-0 overflow-visible absolute hidden md:block">
+    <div class="h-taskbarcontents c gap-4 items-center py-2 px-4 flex justify-center">
     </div>
     <div class="h-taskbar h-[3.75rem] justify-center flex absolute top-auto bottom-0 left-0 right-0">
       <div class="h-taskbar h-[3.75rem] justify-between flex absolute top-auto bottom-0 left-0 right-0">
@@ -75,10 +104,11 @@
           <img class="h-[3rem]" src="assets/starscapedigitallogoleft.png" alt="Starscape Digital logo">
         </div>
         <div class="h-taskbarcontents r gap-4 items-center py-2 px-4 flex justify-end">
-          
+
         </div>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

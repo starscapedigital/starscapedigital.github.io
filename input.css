@@ -2,27 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face { font-family: Moonstar; src: url('assets/Moonstar.ttf'); }
-@font-face { font-family: Starlight; src: url('assets/Starlight.ttf'); } 
-@font-face { font-family: Diabolica; src: url('assets/Diabolica-VRBB.ttf'); } 
-@font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); } 
+@layer base {
+  @font-face { font-family: Moonstar; src: url('assets/Moonstar.ttf'); }
+  @font-face { font-family: Starlight; src: url('assets/Starlight.ttf'); } 
+  @font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); }
+  @font-face { font-family: Decoder; src: url('assets/DECODER_.TTF'); }
+
+  .img-rotate {
+    @apply transition ease-in-out hover:rotate-180 hover:duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none;
+  }
+
+  /* https://freefrontend.com/css-border-animations/ */
+}
+
 html {
-  background-position: 50% 15%; background-repeat: no-repeat; background-size: cover; background-attachment: scroll; overflow: hidden auto; background-image: url("https://cdn.beacons.ai/user_content/8eOGw07iMvbP8AwATUDkHi1yDhX2/backgrounds/home/background_lavitz.png?t=1685381547752");
+  /* background-position: 50% 15%; */
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: scroll;
+  overflow: hidden;
+  background-image: url('assets/starscape-moon.jpg');
+  /* background-image: url("https://cdn.beacons.ai/user_content/8eOGw07iMvbP8AwATUDkHi1yDhX2/backgrounds/home/background_lavitz.png?t=1685381547752"); */
 }
 html, body {
   /* background-color: black; */
   /* background-image: url('assets/bgstar.gif'); */
   cursor: url('assets/cursor-magic.png'), default;
-  font-family: CyberCaligraphic;
-  color: rgb(204, 193, 36);
+  /* font-family: CyberCaligraphic; */
+  font-family: Decoder, sans-serif;
+  /* color: rgb(204, 193, 36); */
+  @apply text-slate-200;
   margin: 0;
+  @apply text-base;
+  @apply md:text-lg;
+}
+body {
+  overflow: scroll;
 }
 a {
   cursor: url('assets/cursor-magic2.png'), pointer;
 }
 h1 {
-  font-family: Moonstar;
+  font-family: Moonstar, serif;
 }
 .hide-overflow {
   overflow: hidden;
+}
+
+@layer components {
+  /* svg wrapper */
+  .credits {
+    position: relative;
+    margin: 32px auto;
+    width: 320px;  
+  }
+  .credits-shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  .credits-pretext {
+    font-family: 'Roboto Condensed';
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #fff;
+    position: relative;
+    @apply mt-12;
+  }
+  .credits-text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 4px;
+    color: #fff;
+    top: -46px;
+    position: relative;
+  }
+  .credits:hover .credits-shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
 }
