@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        moonstar: ['Moonstar', 'Decoder', 'sans-serif'],
+        diabolica: ['Diabolica', 'Decoder', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

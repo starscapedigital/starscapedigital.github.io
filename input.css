@@ -7,11 +7,15 @@
   @font-face { font-family: Starlight; src: url('assets/Starlight.ttf'); } 
   @font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); }
   @font-face { font-family: Decoder; src: url('assets/DECODER_.TTF'); }
+  @font-face { font-family: Diabolica; src: url('assets/Diabolica-VRBB.ttf'); }
   @font-face { font-family: RobotoCondensed; src: url('https://fonts.cdnfonts.com/css/roboto-condensed'); }
                 
+  .anim-rotate {
+    @apply transition-all transform ease-in-out hover:rotate-[360deg] hover:duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none;
+  }
 
-  .img-rotate {
-    @apply transition ease-in-out hover:rotate-180 hover:duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none;
+  .anim-flash {
+    @apply transition-all transform ease-in-out hover:scale-110 hover:duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none;
   }
 
   /* https://freefrontend.com/css-border-animations/ */
@@ -53,6 +57,18 @@
   p {
     @apply text-base;
     @apply md:text-lg;
+    @apply mt-2;
+  }
+}
+
+@layer utilities {
+  ul.list-star {
+    @apply list-outside text-left;
+    list-style-type: '☆';
+
+    > li {
+      @apply pl-2;
+    }
   }
 }
 
@@ -106,6 +122,37 @@
     /* transform: translateX(0%) translateY(-25%);
     margin-bottom: -25%; */
     
+    opacity: 0.8;
+  }
+
+  .star-mini-clip {
+    clip-path: url(#star-mini-cp);
+    
+    /* width: 50vw;
+    height: 50vw;
+    max-height: 75vh;
+    max-width: 75vh; */
+    width: 62px;
+    height: 62px;
+    max-height: 62px;
+    max-width: 62px;
+    margin-top: -12px;
+    
+    background-size: cover;
+    background-blend-mode: screen;
+    
+    @apply mx-auto;
+  }
+
+  .star-mini-clip-lavitz {
+    /* background-color: #03B897;  */
+    /* @apply bg-teal-500; */
+    background-image: url("https://pbs.twimg.com/profile_images/1628165298384666629/Hls9fZgQ_400x400.jpg");
+    opacity: 0.8;
+  }
+
+  .star-mini-clip-anju {
+    background-image: url("https://pbs.twimg.com/profile_images/1113133709685911552/syTnH3P5_400x400.jpg");
     opacity: 0.8;
   }
 
