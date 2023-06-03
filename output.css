@@ -521,7 +521,7 @@ html {
 
 html, body {
   /* font-family: CyberCaligraphic; */
-  font-family: Decoder, Roboto Condensed, Helvetica, sans-serif;
+  font-family: CyberCaligraphic, Decoder, RobotoCondensed, Helvetica, sans-serif;
   cursor: url('assets/cursor-magic.png'), default;
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
@@ -872,14 +872,14 @@ p {
   margin-right: auto;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .my-\[15\%\] {
   margin-top: 15%;
   margin-bottom: 15%;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-16 {
@@ -908,10 +908,6 @@ p {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-\[10\%\] {
-  margin-top: 10%;
 }
 
 .box-border {
@@ -1134,10 +1130,6 @@ p {
 
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-70 {
-  --tw-bg-opacity: 0.7;
 }
 
 .bg-opacity-80 {
