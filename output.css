@@ -521,7 +521,8 @@ html {
 
 html, body {
   /* font-family: CyberCaligraphic; */
-  font-family: CyberCaligraphic, Decoder, RobotoCondensed, Helvetica, sans-serif;
+  font-family: Decoder, CyberCaligraphic, RobotoCondensed, Helvetica, sans-serif;
+  letter-spacing: 1.1px;
   cursor: url('assets/cursor-magic.png'), default;
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));

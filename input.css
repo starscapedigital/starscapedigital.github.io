@@ -32,7 +32,8 @@
   }
   html, body {
     /* font-family: CyberCaligraphic; */
-    font-family: CyberCaligraphic, Decoder, RobotoCondensed, Helvetica, sans-serif;
+    font-family: Decoder, CyberCaligraphic, RobotoCondensed, Helvetica, sans-serif;
+    letter-spacing: 1.1px;
     cursor: url('assets/cursor-magic.png'), default;
     
     @apply text-slate-200;
