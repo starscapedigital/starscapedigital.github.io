@@ -455,7 +455,7 @@ video {
 @font-face {
   font-family: RobotoCondensed;
 
-  src: url('https://fonts.cdnfonts.com/css/roboto-condensed');
+  src: url('assets/RobotoCondensed-Regular.ttf');
 }
 
 .anim-rotate {
@@ -521,7 +521,7 @@ html {
 
 html, body {
   /* font-family: CyberCaligraphic; */
-  font-family: Decoder, CyberCaligraphic, RobotoCondensed, Helvetica, sans-serif;
+  font-family: RobotoCondensed, Decoder, CyberCaligraphic, Helvetica, sans-serif;
   letter-spacing: 1.1px;
   cursor: url('assets/cursor-magic.png'), default;
   --tw-text-opacity: 1;
@@ -562,8 +562,7 @@ a:hover {
 }
 
 a {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  /* @apply text-xl; */
 }
 
 p {
@@ -920,6 +919,14 @@ p {
   margin-top: 37px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1231,12 +1238,20 @@ p {
   text-align: center;
 }
 
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.font-decoder {
+  font-family: Decoder, sans-serif;
+}
+
 .font-diabolica {
-  font-family: Diabolica, Decoder, sans-serif;
+  font-family: Diabolica, sans-serif;
 }
 
 .font-moonstar {
-  font-family: Moonstar, Decoder, sans-serif;
+  font-family: Moonstar, sans-serif;
 }
 
 .text-2xl {

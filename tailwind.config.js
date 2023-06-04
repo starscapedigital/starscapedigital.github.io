@@ -10,8 +10,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        moonstar: ['Moonstar', 'Decoder', 'sans-serif'],
-        diabolica: ['Diabolica', 'Decoder', 'sans-serif'],
+        moonstar: ['Moonstar', 'sans-serif'],
+        diabolica: ['Diabolica', 'sans-serif'],
+        decoder: ['Decoder', 'sans-serif'],
       }
     },
   },

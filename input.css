@@ -8,7 +8,7 @@
   @font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); }
   @font-face { font-family: Decoder; src: url('assets/DECODER_.TTF'); }
   @font-face { font-family: Diabolica; src: url('assets/Diabolica-VRBB.ttf'); }
-  @font-face { font-family: RobotoCondensed; src: url('https://fonts.cdnfonts.com/css/roboto-condensed'); }
+  @font-face { font-family: RobotoCondensed; src: url('assets/RobotoCondensed-Regular.ttf'); }
                 
   .anim-rotate {
     @apply transition-all transform ease-in-out hover:rotate-[360deg] hover:duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none;
@@ -32,7 +32,7 @@
   }
   html, body {
     /* font-family: CyberCaligraphic; */
-    font-family: Decoder, CyberCaligraphic, RobotoCondensed, Helvetica, sans-serif;
+    font-family: RobotoCondensed, Decoder, CyberCaligraphic, Helvetica, sans-serif;
     letter-spacing: 1.1px;
     cursor: url('assets/cursor-magic.png'), default;
     
@@ -53,7 +53,7 @@
     @apply text-cyan-400;
     @apply hover:text-yellow-400;
     @apply hover:underline;
-    @apply text-xl;
+    /* @apply text-xl; */
   }
   p {
     @apply text-base;
