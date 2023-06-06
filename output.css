@@ -458,6 +458,18 @@ video {
   src: url('assets/RobotoCondensed-Regular.ttf');
 }
 
+@font-face {
+  font-family: Slant;
+
+  src: url('assets/SLANT.TTF');
+}
+
+@font-face {
+  font-family: Runescape;
+
+  src: url('assets/runescape_uf.woff');
+}
+
 .anim-rotate {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transition-property: all;
@@ -521,7 +533,7 @@ html {
 
 html, body {
   /* font-family: CyberCaligraphic; */
-  font-family: RobotoCondensed, Decoder, CyberCaligraphic, Helvetica, sans-serif;
+  font-family: RobotoCondensed, Slant, Decoder, CyberCaligraphic, Helvetica, sans-serif;
   letter-spacing: 1.1px;
   cursor: url('assets/cursor-magic.png'), default;
   --tw-text-opacity: 1;
@@ -799,7 +811,7 @@ p {
 }
 
 .credits-pretext {
-  font-family: 'Decoder';
+  font-family: 'Slant';
   font-size: 12px;
   line-height: 32px;
   letter-spacing: 2px;
@@ -907,8 +919,16 @@ p {
   margin-top: 4rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
@@ -917,14 +937,6 @@ p {
 
 .mt-\[37px\] {
   margin-top: 37px;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .box-border {
@@ -1242,16 +1254,16 @@ p {
   vertical-align: baseline;
 }
 
-.font-decoder {
-  font-family: Decoder, sans-serif;
-}
-
 .font-diabolica {
   font-family: Diabolica, sans-serif;
 }
 
 .font-moonstar {
   font-family: Moonstar, sans-serif;
+}
+
+.font-slant {
+  font-family: Slant, sans-serif;
 }
 
 .text-2xl {

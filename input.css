@@ -9,6 +9,8 @@
   @font-face { font-family: Decoder; src: url('assets/DECODER_.TTF'); }
   @font-face { font-family: Diabolica; src: url('assets/Diabolica-VRBB.ttf'); }
   @font-face { font-family: RobotoCondensed; src: url('assets/RobotoCondensed-Regular.ttf'); }
+  @font-face { font-family: Slant; src: url('assets/SLANT.TTF'); }
+  @font-face { font-family: Runescape; src: url('assets/runescape_uf.woff'); }
                 
   .anim-rotate {
     @apply transition-all transform ease-in-out hover:rotate-[360deg] hover:duration-300 motion-reduce:transition-none motion-reduce:hover:transform-none;
@@ -32,7 +34,7 @@
   }
   html, body {
     /* font-family: CyberCaligraphic; */
-    font-family: RobotoCondensed, Decoder, CyberCaligraphic, Helvetica, sans-serif;
+    font-family: RobotoCondensed, Slant, Decoder, CyberCaligraphic, Helvetica, sans-serif;
     letter-spacing: 1.1px;
     cursor: url('assets/cursor-magic.png'), default;
     
@@ -173,7 +175,7 @@
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
   }
   .credits-pretext {
-    font-family: 'Decoder';
+    font-family: 'Slant';
     font-size: 12px;
     line-height: 32px;
     letter-spacing: 2px;

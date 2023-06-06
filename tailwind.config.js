@@ -13,6 +13,7 @@ module.exports = {
         moonstar: ['Moonstar', 'sans-serif'],
         diabolica: ['Diabolica', 'sans-serif'],
         decoder: ['Decoder', 'sans-serif'],
+        slant: ['Slant', 'sans-serif'],
       }
     },
   },
